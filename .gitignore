@@ -1,0 +1,46 @@
+
+
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../:\Workspace\JavaSE\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+*.class
+*.log
+*.lock
+
+
+# Package Files #
+*.jar
+*.war
+*.ear
+targer/
+
+
+# idea #
+.idea/
+*.iml
+*.velocity.log*
+
+
+#STS#
+.apt_generated
+.factorypath
+.springBeans
+# IntelliJ IDEA #
+*.ipr
+*.iws
+.idea
+.classpath
+.project
+.settings/
+bin/
+tmp/
+
+
+#rebel
+*rebel.xml*
