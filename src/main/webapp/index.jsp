@@ -14,7 +14,7 @@
     <script src="world.js"></script>
 </head>
 <body>
-<div id="main" style="width: 1960px;height: 1080px"></div>
+<div id="main" style="width: 1920px;height: 1080px"></div>
 <script type="text/javascript">
     $(function () {
         <!-- 通过ajax异步获取数据-->
@@ -41,8 +41,8 @@
                 option = {
                     title: {
                         text: "世界疫情地图",
-                        subtext: "Author dingziming",
-                        left: "center",
+                        subtext: "Author dingziming\n2021/2/20",
+                        left: "left",
                         textStyle: {
                             fontSize: 30,
                         },
@@ -53,8 +53,9 @@
                     visualMap: {
                         type: 'piecewise',
                         pieces: [
-                            {gte: 1000000},                    // >=1000000,
-                            {gte: 100000, lte: 1000000},      // [100000,1000000]
+                            {gte:10000000,label:'重灾区'},
+                            {gte: 1000000,lte: 10000000},      // [1000000,10000000]
+                            {gte: 100000, lt: 1000000},      // [100000,1000000)
                             {gte: 10000, lt: 100000},         // [10000,100000)
                             {gte: 1000, lt: 10000},           // [1000,10000)
                             {gte: 0, lt: 1000},               // [0,1000)
